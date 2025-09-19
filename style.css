@@ -3,11 +3,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap');
 
 :root {
-    --Very-Dark-Blue: hsl(212, 100%, 18%);
+    --Very-Dark-Blue: hsl(243, 96%, 9%);
     --Dark-Grayish-Blue: hsl(213, 19%, 18%);
     --Grayish-Blue: hsl(214, 17%, 51%);
     --Light-Grayish-Blue: hsl(212, 33%, 89%);
-    --Very-Light-Gray: hsl(200, 15%, 95%);
+    --Very-Light-Gray: hsl(250, 6%, 84%);
     --White: hsl(0, 0%, 100%);
     --Orange: hsl(28, 100%, 52%);
     --Font-Header: 'Bricolage Grotesque', serif;
@@ -18,4 +18,37 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'DM Sans', sans-serif;
+}
+img {
+    max-width: 100%;
+}
+
+body{
+    background-color: var(--Very-Dark-Blue);
+    color: var(--White);
+    height: 100vh;
+    font-family: var(--Font-Body);
+}
+
+.navbar{
+    width: 100%;
+    padding: 2rem 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero h1 {
+    text-align: center;
+    font-family: var(--Font-Header);
+}
+
+.attribution {
+    font-size: 11px; 
+    text-align: center; 
+    margin-top: 30rem;
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
 }
