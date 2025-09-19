@@ -12,10 +12,21 @@
     <a href="#main" class="visually-hidden">Skip to main content</a>
     <header>
         <nav class="navbar">
-            <img src="./assets/images/logo.svg" alt="Logo">
+            <a href="/">
+                <img src="./assets/images/logo.svg" alt="Logo" width="197" height="40">
+            </a>
+
+            <select name="units" id="units">
+                <option value="">Units</option>
+            </select>
         </nav>
         <div class="hero">
             <h1>How's the sky looking today?</h1>
+            <form action="#" class="search-form" id="search-form">
+                <input type="text" name="city" id="city" placeholder="Search for city" aria-label="Search for city" required>
+                <button type="submit" aria-label="Search">
+                    <img src="./assets/images/icon-search.svg" alt="" width="16" height="16">
+                </button>
         </div>
     </header>
     <main id="main">
