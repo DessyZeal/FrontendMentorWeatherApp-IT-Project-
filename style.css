@@ -6,9 +6,9 @@
     --Very-light-blue-btn: hsl(233, 67%, 56%);
     --Very-navy-blue: hsl(248, 70%, 36%);
     --Very-Dark-Blue: hsl(243, 96%, 9%);
-    --Dark-Grayish-Blue: hsl(213, 19%, 18%);
+    --Dark-Grayish-Blue: hsl(243, 23%, 24%);
     --Grayish-Blue: hsl(214, 17%, 51%);
-    --Light-Grayish-Blue: hsl(212, 33%, 89%);
+    --Light-Grayish-Blue: hsl(250, 6%, 84%);
     --Very-Light-Gray: hsl(250, 6%, 84%);
     --White: hsl(0, 0%, 100%);
     --Orange: hsl(28, 100%, 52%);
@@ -50,6 +50,12 @@ body{
     align-items: center;
 }
 
+.hero{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 .hero h1 {
     text-align: center;
     font-family: var(--Font-Header);
@@ -58,18 +64,33 @@ body{
 
 .hero-search {
     margin-top: 2rem;
-    text-align: center;
+    background-color: var(--Dark-Grayish-Blue);
+    width: min-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
 }
 
 .hero-search input {
-    width: 350px;
+    width: 390px; 
     padding: .8rem;
-    border-radius: 10px;
     border: none;
     outline: none;
+    background-color: var(--Dark-Grayish-Blue);
+    color: var(--White);
+    border-radius: 10px;
 }
 
-.hero-search button {
+::placeholder {
+    color: var(--Light-Grayish-Blue);
+    font-weight: 500;
+}
+.search-btn {
+    margin-left: 20px;
+}
+
+button {
     padding: .8rem 1.2rem;
     border-radius: 10px;
     border: none;
